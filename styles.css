@@ -1,0 +1,504 @@
+@media screen {
+  body {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    background-color: #018281;
+    overflow: hidden;
+  }
+  .top_bar {
+    width: 40%;
+    height: 50%;
+    float: center;
+  }
+  .left_bar {
+    float: left;
+    width: 20%;
+    bottom: 100px;
+    position: flex;
+  }
+
+  audio {
+    width: 80%;
+  }
+  .musicpage {
+    margin-left: 100px;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 10;
+    font-family: "Common Pixel", sans-serif;
+    color: pink;
+  }
+
+   .musicpage h3{
+    font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  .projectwords {
+    font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+    color: #ffffff;
+    font-size: 1.3em;
+  }
+
+  .musicpage ul {
+    list-style-type: none;
+  }
+  .projectspage {
+    margin-left: 100px;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 10;
+    font-family: "Common Pixel", sans-serif;
+    color: pink;
+  }
+
+  .projectspage ul {
+    list-style-type: none;
+  }
+
+  .blendervids {
+    height: 100%;
+    overflow-y: scroll;
+    float: center;
+    position: fixed;
+    z-index: 4;
+  }
+
+  .main {
+    float: center;
+    width: 60%;
+  }
+  .right_bar {
+    float: right;
+    width: 80%;
+  }
+  .talk {
+    padding-left: 680px;
+    position: absolute;
+  }
+  .talkwords.talk {
+    font-size: 26px;
+    position: absolute;
+    padding-right: 55px;
+    z-index: 2;
+    font-family: "Common Pixel", sans-serif;
+  }
+  .hooty {
+    margin-top: 100px;
+    margin-left: 75px;
+    position: fixed;
+    float: right;
+  }
+
+  .hooty:hover {
+    transform: translateY(-25px);
+  }
+
+  .bottom_bar {
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    bottom: 0;
+    z-index: 12;
+    background-color: lightgrey;
+  }
+
+  .emailsquare {
+    width: 100px;
+    height: 90px;
+    margin-right: 0px;
+  }
+  .emailsquare:hover {
+    transform: translateX(-4px);
+  }
+  .computersquare {
+    width: 100px;
+    height: 90px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 3em;
+  }
+  .computersquare:hover {
+    transform: translateX(-4px);
+  }
+  .blendsquare {
+    width: 100px;
+    height: 90px;
+    margin-right: 0px;
+  }
+  .blendsquare:hover {
+    transform: translateX(-4px);
+  }
+  .musicsquare {
+    margin-top: 25px;
+    height: 90px;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+  .musicsquare:hover {
+    transform: translateX(-4px);
+  }
+
+  .miscsquare {
+    margin-top: 30px;
+    height: 90px;
+    margin-right: 20px;
+  }
+  .miscsquare:hover {
+    transform: translateX(-4px);
+  }
+
+  .gamessquare {
+    margin-top: 20px;
+    height: 90px;
+    margin-right: 20px;
+  }
+  .gamessquare:hover {
+    transform: translateX(-4px);
+  }
+  .startIcon {
+    background: pink;
+    height: 50%;
+    width: 7%;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Common Pixel", sans-serif;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: darkgrey;
+    background-size: block;
+
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+  }
+
+  .startIcon:hover {
+    background-color: pink;
+    background-size: absolute;
+  }
+
+  .startIcon:active {
+    background-color: pink;
+    background-size: absolute;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .iconWords1 {
+    margin-left: 35px;
+    margin-top: -55px;
+    position: block;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  .iconWords2 {
+    padding-left: 55px;
+    margin-top: -40px;
+    position: block;
+    font-family: "Common Pixel", sans-serif;
+  }
+  .iconWords3 {
+    margin-left: 65px;
+    margin-top: -70px;
+    position: block;
+    font-family: "Common Pixel", sans-serif;
+  }
+  .iconWords4 {
+    margin-left: 60px;
+    margin-top: -45px;
+    position: block;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  .iconWords5 {
+    margin-left: 55px;
+    margin-top: -50px;
+    position: block;
+    font-family: "Common Pixel", sans-serif;
+    align-items: center;
+  }
+
+  #mydiv {
+    position: absolute;
+    z-index: 8;
+    height: 450px;
+    width: 400px;
+    background-color: darkgrey;
+    border: 10px solid #d3d3d3;
+    text-align: center;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  #mydivheader {
+    margin: 0px;
+    height: 50px;
+    font-family: "Common Pixel", sans-serif;
+    font-size: 18px;
+    cursor: grab;
+    z-index: 9;
+    background-color: pink;
+  }
+
+  input[type="text1"] {
+    width: 60%;
+    padding: 40px 20px;
+    margin: 8px 100;
+    box-sizing: border-box;
+    border-radius: 30em;
+  }
+  input[type="text"] {
+    size: 40;
+    box-sizing: border-box;
+  }
+
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: pink;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .popup .popuptext {
+    visibility: hidden;
+    width: 350px;
+    height: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 11;
+    bottom: 125%;
+    left: 0%;
+    margin-left: 0px;
+  }
+
+  .martymenu {
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    margin-left: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+  }
+
+  .blendervids {
+    height: 100%;
+    overflow-y: scroll;
+    float: center;
+    position: fixed;
+    z-index: 4;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 645px) {
+  .right_bar {
+    float: right;
+    width: 50%;
+  }
+  #mydiv {
+    position: absolute;
+    z-index: 8;
+    height: 450px;
+    width: 700px;
+    background-color: darkgrey;
+    border: 10px solid #d3d3d3;
+    text-align: center;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  #mydivheader {
+    margin: 0px;
+    height: 50px;
+    font-family: "Common Pixel", sans-serif;
+    font-size: 18px;
+    cursor: grab;
+    z-index: 9;
+    background-color: pink;
+  }
+  audio {
+    width: 50%;
+  }
+  .musicpage {
+    padding-left: 200px;
+  }
+  .projectpage {
+    padding-left: 200px;
+  }
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .popup .popuptext {
+    visibility: hidden;
+    width: 350px;
+    height: 600px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 11;
+    bottom: 125%;
+    left: 0%;
+    margin-left: 0px;
+  }
+
+  .martymenu {
+    text-align: right;
+  }
+
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    margin-left: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+  }
+}
+@media screen and (min-width: 960px) {
+  .right_bar {
+    float: right;
+    width: 30%;
+  }
+
+  #mydiv {
+    position: absolute;
+    z-index: 8;
+    height: 450px;
+    width: 700px;
+    background-color: darkgrey;
+    border: 10px solid #d3d3d3;
+    text-align: center;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  #mydivheader {
+    margin: 0px;
+    height: 50px;
+    font-family: "Common Pixel", sans-serif;
+    font-size: 18px;
+    cursor: grab;
+    z-index: 9;
+    background-color: pink;
+  }
+  .musicpage {
+    padding-left: 500px;
+  }
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .popup .popuptext {
+    visibility: hidden;
+    width: 350px;
+    height: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 11;
+    bottom: 125%;
+    left: 80%;
+    margin-left: 0px;
+    padding-right: 20px;
+  }
+
+  .martymenu {
+    text-align: right;
+  }
+
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    margin-left: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+  }
+}

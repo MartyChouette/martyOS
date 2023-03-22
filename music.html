@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MartyOS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
+    <style></style>
+    <script>
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+      function changeColor(event) {
+        const text = document.getElementById("text");
+        const color = event.currentTarget.innerText;
+        text.style.color = color;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="top_bar">
+      <div class="musicpage">
+        <div class="musicTitle">
+          <h1>MUSIC</h1>
+        </div>
+        <ul>
+          <div class="musicDesc">
+            <h2>walls menu</h2>
+            <li>
+              <audio controls>
+                <source src="audio/songs/walls menu.wav" type="audio/wav" />
+
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+            <h3>Song for small prototype game "WALLS"</h3>
+            <br />
+            <br />
+            <h2>the fib intro</h2>
+            <audio controls>
+              <source src="audio/songs/fibintronu(1).wav" type="audio/wav" />
+
+              Your browser does not support the audio element.
+            </audio>
+            <h3>
+              Song I made for a youtube channel<br />
+              I was making befre I decided to spend<br />
+              my time making games instead of <br />judging them
+            </h3>
+            <br />
+            <br />
+            <h2>docksides calm piano</h2>
+            <audio controls>
+              <source
+                src="audio/songs/dockside- mncrftrip final.wav"
+                type="audio/wav"
+              />
+
+              Your browser does not support the audio element.
+            </audio>
+            <h3>
+              One of three songs I created for a student <br />project fishing
+              game I in which you catch <br />fish for reastaurants on the town
+              pier.
+            </h3>
+            <br />
+            <br />
+            <h2>witchy riffs</h2>
+            <audio controls>
+              <source
+                src="audio/songs/spell stew - waves with space- final.wav"
+                type="audio/wav"
+              />
+
+              Your browser does not support the audio element.
+            </audio>
+            <h3>
+              Song I made for another student project<br />
+              a magical witchy tower defense game.
+            </h3>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
+          <!-- <div class="musicTitle">
+            <h1>SFX</h1>
+          </div> -->
+          <!-- <div class="musicDesc">
+            <h2>popped enemy fx</h2>
+            <audio controls>
+              <source src="audio/sfx/FX- pop III.wav" type="audio/wav" />
+
+              Your browser does not support the audio element.
+            </audio>
+            <h3>more details on the track</h3>
+            <br />
+            <br />
+            <h2>
+              my favorite scratch from an old roland also used in earthbound
+            </h2>
+            <audio controls>
+              <source src="audio/sfx/FX - scratch ui.wav" type="audio/wav" />
+
+              Your browser does not support the audio element.
+            </audio>
+            <h3>more details on the track</h3>
+            <br />
+            <br />
+            <h2>lady character gibberish talk</h2>
+            <audio controls>
+              <source src="audio/dialog/lady I.wav" type="audio/wav" />
+
+              Your browser does not support the audio element.
+            </audio>
+            <h3>more details on the track</h3>
+            <br />
+            <br />
+            <h2>guy character gibberish talk</h2>
+            <audio controls>
+              <source src="audio/dialog/sushi dude II.wav" type="audio/wav" />
+
+              Your browser does not support the audio element.
+            </audio>
+            <h3>more details on the track</h3>
+          </div> -->
+        </ul>
+      </div>
+    </div>
+    <div class="left_bar" style="z-index: 9">
+      <div
+        class="computersquare"
+        style="margin-left: 25px; background-color: none"
+      >
+        <a href="index.html">
+          <img src="images/computer.png" style="width: 150px"
+        /></a>
+        <div class="iconWords1">COMPUTER</div>
+      </div>
+
+      <div
+        class="emailsquare"
+        style="margin-left: 25px; background-color: none"
+      >
+        <a href="email.html"
+          ><img src="images/email.png" style="width: 150px"
+        /></a>
+        <div class="iconWords2">EMAIL</div>
+      </div>
+
+      <div class="blendsquare" style="background-color: none">
+        <a href="blender.html"
+          ><img src="images/blendericon.png" style="width: 200px"
+        /></a>
+        <div class="iconWords3">BLENDER</div>
+      </div>
+
+      <div class="musicsquare" style="background-color: none">
+        <a href="music.html"
+          ><img src="images/music.png" style="width: 175px"
+        /></a>
+        <div class="iconWords4">MUSIC</div>
+      </div>
+
+      <div class="gamessquare" style="background-color: none">
+        <a href="games.html"
+          ><img src="images/disk2.png" style="width: 200px"
+        /></a>
+        <div class="iconWords5">GAMES</div>
+      </div>
+
+      <div
+        class="miscsquare"
+        style="background-color: none; visibility: hidden"
+      >
+        <img src="images/folder.png" style="width: 175px" />
+        <div class="iconWords5">FILE</div>
+      </div>
+    </div>
+    <!-- <div class="main">
+      <span class="talk"
+        ><img src="images/talkboxedit.png" style="width: 500px" />
+        <span class="talk talkwords">HI!</span>
+      </span>
+    </div> -->
+
+    <div class="right_bar">
+      <div class="hooty">
+        <img src="images/owlno.png" style="width: 500px" />
+      </div>
+    </div>
+
+    <div class="bottom_bar">
+      <div class="startIcon">
+        <div class="popup" onclick="myFunction()">
+          START
+          <span class="popuptext" id="myPopup">
+            <div class="martymenu">
+              ->Made by MARTY <br /><br />
+              MARTY'S
+              <a href="https://martychouette.github.io/">RESUME</a><br /><br />
+              MARTY'S
+              <a href="https://www.linkedin.com/in/marty-scott-08a925123/"
+                >LINKEDIN</a
+              ><br /><br />
+              MARTY'S
+              <a href="https://github.com/MartyChouette">GITHUB</a><br /><br />
+              MARTY'S
+              <a href="https://dev.to/martychouette"> JOURNAL</a><br /><br />
+              <!-- ABOUT MARTY
+              <a href="url">link text</a><br /><br />
+              ABOUT HOOTY
+              <a href="url">link text</a><br /><br />
+              SITES SOURCE CODE
+              <a href="url">link text</a><br /><br /> -->
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
