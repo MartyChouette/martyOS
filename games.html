@@ -18,9 +18,39 @@
         const color = event.currentTarget.innerText;
         text.style.color = color;
       }
+      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function menuFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
     </script>
   </head>
   <body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="index.html">Marty_OS</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="email.html">Email</a>
+        <a href="music.html">Music</a>
+        <a href="games.html" class="active">Projects</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     <div class="top_bar">
       <div class="musicpage">
         <div class="musicTitle">
@@ -66,71 +96,68 @@
             <br />
             <br />
             <h2>DOCKSIDE-----</h2>
-            <div class="col-sm-4 col-12 p-0">
+            <div class="col-sm-4">
               <a href="https://sulfurous.itch.io/dockside"
-                ><img src="images/dockside.png" alt="not found"
+                ><img
+                  src="images/dockside.png"
+                  alt="this is not the img you are looking for"
               /></a>
             </div>
             <div class="projectwords">
-              A 2D fishing for a small <br />town game music <br />music/sound
-              effects & <br />implimentation <br />and design ascpects done<br />
-              by me <br />~technology used~ <br />Unity <br />C# <br />Github
-              <br />Logic Pro X
+              A 2D fishing for a small town game music music/sound effects &
+              implimentation and design ascpects done by me <br />~technology
+              used~ <br />Unity <br />C# <br />Github <br />Logic Pro X
             </div>
             <br />
             <br />
             <h2>CUBE DANCING-----</h2>
-            <div class="col-sm-4 col-12 p-4">
+            <div class="col-sm-4">
               <a href="https://partial-insanity.itch.io/cube-dancing"
                 ><img
-                  class="img-thumbnail"
                   src="images/cube.png"
-                  alt="not found"
+                  alt="this is not the img you are looking for"
               /></a>
             </div>
             <div class="projectwords">
-              A 3D rythm cube <br />puzzle game.<br />
-              Game dev club student <br />project I did the score<br />
-              design and interface <br />~technology used~ <br />C# <br />Github
+              A 3D rythm cube puzzle game. Game dev club student project I did
+              the score design and interface <br />~technology used~ <br />C#
+              <br />Github
               <br />
             </div>
             <br />
             <br />
             <h2>FROSTBYTE-----</h2>
-            <div class="col-sm-4 col-12 p-4">
+            <div class="col-sm-4">
               <a href="https://martychouette.itch.io/frostbyte-v01"
                 ><img
-                  class="img-thumbnail"
-                  style="height: 300px"
                   src="images/fbtitlecard.png"
-                  alt="not found"
+                  alt="this is not the img you are looking for"
               /></a>
             </div>
             <div class="projectwords">
-              A 2D top down escape <br />the maze game inspired <br />by the
-              final scene of <br />The Shinning. <br />
-              created and programmed <br />by me <br />~technology used~
-              <br />Unity <br />C# <br />Github <br />Logic Pro X
+              A 2D top down escape the maze game inspired by the final scene of
+              The Shinning. Designed and programmed by me <br />~technology
+              used~ <br />Unity <br />C# <br />Github <br />Logic Pro X
               <br />
             </div>
           </div>
           <div class="musicTitle"></div>
           <div class="musicDesc">
             <h2>WALLS-----</h2>
-            <div class="col-sm-4 col-12 p-4">
+            <div class="col-sm-4">
               <a href="https://martychouette.itch.io/walls"
                 ><img
-                  class="img-thumbnail"
-                  style="width: 350px"
                   src="images/wallspic.PNG"
-                  alt="not found"
+                  alt="this is not the img you are looking for"
               /></a>
             </div>
             <div class="projectwords">
-              A small 3D game of <br />blocking the balls before <br />they
-              enter the goal.<br />
-              created and programmed <br />by me <br />~technology used~
-              <br />Unity <br />C# <br />Github <br />Logic Pro X
+              A small 3D game of blocking the balls before they enter the goal.
+              Designed and programmed by me <br />~technology used~ <br />Unity
+              <br />C# <br />Github <br />Logic Pro X
+              <br />
+              <br />
+              <br />
               <br />
               <br />
               <br />
@@ -139,45 +166,29 @@
         </ul>
       </div>
     </div>
-    <div class="left_bar" style="z-index: 9">
-      <div
-        class="computersquare"
-        style="margin-left: 25px; background-color: none"
-      >
-        <a href="index.html">
-          <img src="images/computer.png" style="width: 150px"
-        /></a>
+    <div class="left_bar" style="z-index: 99">
+      <div class="computersquare">
+        <a href="index.html"> <img src="images/computer.png" /></a>
         <div class="iconWords1">COMPUTER</div>
       </div>
 
-      <div
-        class="emailsquare"
-        style="margin-left: 25px; background-color: none"
-      >
-        <a href="email.html"
-          ><img src="images/email.png" style="width: 150px"
-        /></a>
+      <div class="emailsquare">
+        <a href="email.html"><img src="images/email.png" /></a>
         <div class="iconWords2">EMAIL</div>
       </div>
 
-      <div class="blendsquare" style="background-color: none">
-        <a href="blender.html"
-          ><img src="images/blendericon.png" style="width: 200px"
-        /></a>
+      <div class="blendsquare">
+        <a href="blender.html"><img src="images/blendericon.png" /></a>
         <div class="iconWords3">BLENDER</div>
       </div>
 
-      <div class="musicsquare" style="background-color: none">
-        <a href="music.html"
-          ><img src="images/music.png" style="width: 175px"
-        /></a>
+      <div class="musicsquare">
+        <a href="music.html"><img src="images/music.png" /></a>
         <div class="iconWords4">MUSIC</div>
       </div>
 
-      <div class="gamessquare" style="background-color: none">
-        <a href="games.html"
-          ><img src="images/disk2.png" style="width: 200px"
-        /></a>
+      <div class="gamessquare">
+        <a href="games.html"><img src="images/disk2.png" /></a>
         <div class="iconWords5">PROJECTS</div>
       </div>
 
@@ -198,7 +209,7 @@
 
     <div class="right_bar">
       <div class="hooty">
-        <img src="images/owlno.png" style="width: 500px" />
+        <img src="images/owlno.png" />
       </div>
     </div>
 

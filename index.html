@@ -18,49 +18,79 @@
         const color = event.currentTarget.innerText;
         text.style.color = color;
       }
+      function menuFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
     </script>
   </head>
   <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="index.html" class="active">Marty_OS</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="email.html">Email</a>
+        <a href="music.html">Music</a>
+        <a href="games.html">Projects</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     <div class="top_bar"></div>
-    <div class="left_bar">
-      <div
-        class="computersquare"
-        style="margin-left: 25px; background-color: none"
+
+    <div class="owl_bar">
+      <img
+        src="images/talk.png"
+        style="position: absolute; margin-top: -160px; margin-left: -450px"
+      />
+      <span
+        class="welcome"
+        style="position: absolute; font-size: 34px; margin-top: 101px"
+        >welcome</span
       >
-        <a href="index.html">
-          <img src="images/computer.png" style="width: 150px"
-        /></a>
+      <div class="hooty">
+        <img
+          src="images/owlno.png"
+          style="position: absolute; margin-right: 1200px"
+        />
+      </div>
+    </div>
+
+    <div class="left_bar">
+      <div class="computersquare">
+        <a href="index.html"> <img src="images/computer.png" /></a>
         <div class="iconWords1">COMPUTER</div>
       </div>
 
-      <div
-        class="emailsquare"
-        style="margin-left: 25px; background-color: none"
-      >
-        <a href="email.html"
-          ><img src="images/email.png" style="width: 150px"
-        /></a>
+      <div class="emailsquare">
+        <a href="email.html"><img src="images/email.png" /></a>
         <div class="iconWords2">EMAIL</div>
       </div>
 
-      <div class="blendsquare" style="background-color: none">
-        <a href="blender.html"
-          ><img src="images/blendericon.png" style="width: 200px"
-        /></a>
+      <div class="blendsquare">
+        <a href="blender.html"><img src="images/blendericon.png" /></a>
         <div class="iconWords3">BLENDER</div>
       </div>
 
-      <div class="musicsquare" style="background-color: none">
-        <a href="music.html"
-          ><img src="images/music.png" style="width: 175px"
-        /></a>
+      <div class="musicsquare">
+        <a href="music.html"><img src="images/music.png" /></a>
         <div class="iconWords4">MUSIC</div>
       </div>
 
-      <div class="gamessquare" style="background-color: none">
-        <a href="games.html"
-          ><img src="images/disk2.png" style="width: 200px"
-        /></a>
+      <div class="gamessquare">
+        <a href="games.html"><img src="images/disk2.png" /></a>
         <div class="iconWords5">PROJECTS</div>
       </div>
 
@@ -68,7 +98,7 @@
         class="miscsquare"
         style="background-color: none; visibility: hidden"
       >
-        <img src="images/folder.png" style="width: 175px" />
+        <img src="images/folder.png" />
         <div class="iconWords5">FILE</div>
       </div>
     </div>
@@ -80,11 +110,7 @@
       </span>
     </div> -->
 
-    <div class="right_bar">
-      <div class="hooty">
-        <img src="images/owlno.png" style="width: 500px" />
-      </div>
-    </div>
+    <div class="right_bar"></div>
 
     <div class="bottom_bar">
       <div class="startIcon">

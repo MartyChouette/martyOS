@@ -11,18 +11,29 @@
     height: 50%;
     float: center;
   }
+  .owl_bar {
+    padding-top: 140px;
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    float: center;
+  }
   .left_bar {
+    visibility: hidden;
     float: left;
-    width: 20%;
-    bottom: 100px;
-    position: flex;
+  }
+
+  .left_bar img {
+    margin-top: -25px;
+    width: 135px;
+    height: auto;
   }
 
   audio {
     width: 80%;
   }
   .musicpage {
-    margin-left: 100px;
+    margin-left: 10px;
     height: 100%;
     overflow-y: scroll;
     position: fixed;
@@ -31,7 +42,7 @@
     color: pink;
   }
 
-   .musicpage h3{
+  .musicpage h3 {
     font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
     color: #ffffff;
     font-size: 1.2em;
@@ -69,11 +80,11 @@
 
   .main {
     float: center;
-    width: 60%;
+    width: 40%;
   }
   .right_bar {
     float: right;
-    width: 80%;
+    width: 30%;
   }
   .talk {
     padding-left: 680px;
@@ -87,10 +98,14 @@
     font-family: "Common Pixel", sans-serif;
   }
   .hooty {
-    margin-top: 100px;
-    margin-left: 75px;
+    margin-top: 120px;
+    margin-left: 25px;
     position: fixed;
     float: right;
+  }
+
+  .hooty img {
+    height: 500px;
   }
 
   .hooty:hover {
@@ -107,36 +122,42 @@
   }
 
   .emailsquare {
-    width: 100px;
-    height: 90px;
-    margin-right: 0px;
+    z-index: 122;
+  }
+  .emailsquare img {
+    height: auto;
+    width: 135px;
   }
   .emailsquare:hover {
     transform: translateX(-4px);
   }
   .computersquare {
-    width: 100px;
-    height: 90px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-top: 3em;
+    z-index: 122;
+  }
+  .computersquare img {
+    height: auto;
+    width: 135px;
   }
   .computersquare:hover {
     transform: translateX(-4px);
   }
   .blendsquare {
-    width: 100px;
-    height: 90px;
-    margin-right: 0px;
+    z-index: 122;
+  }
+  .blendsquare img {
+    height: auto;
+    width: 155px;
   }
   .blendsquare:hover {
     transform: translateX(-4px);
   }
   .musicsquare {
-    margin-top: 25px;
-    height: 90px;
-    margin-right: 0px;
-    margin-left: 10px;
+    z-index: 122;
+    margin-right: 40px;
+  }
+  .musicsquare img {
+    height: auto;
+    width: 146px;
   }
   .musicsquare:hover {
     transform: translateX(-4px);
@@ -144,17 +165,23 @@
 
   .miscsquare {
     margin-top: 30px;
-    height: 90px;
     margin-right: 20px;
   }
+  .miscsquare img {
+    height: auto;
+    width: 135px;
+  }
+
   .miscsquare:hover {
     transform: translateX(-4px);
   }
 
   .gamessquare {
-    margin-top: 20px;
-    height: 90px;
-    margin-right: 20px;
+    width: auto;
+  }
+  .gamessquare img {
+    height: auto;
+    width: 155px;
   }
   .gamessquare:hover {
     transform: translateX(-4px);
@@ -162,7 +189,7 @@
   .startIcon {
     background: pink;
     height: 50%;
-    width: 7%;
+    width: 100px;
     margin-top: 10px;
     margin-left: 20px;
     font-family: "Common Pixel", sans-serif;
@@ -175,7 +202,6 @@
     color: #fff;
     background-color: darkgrey;
     background-size: block;
-
     border: none;
     border-radius: 15px;
     box-shadow: 0 5px #999;
@@ -194,35 +220,30 @@
   }
 
   .iconWords1 {
-    margin-left: 35px;
-    margin-top: -55px;
-    position: block;
+    margin-top: -45px;
+    margin-left: 20px;
     font-family: "Common Pixel", sans-serif;
   }
 
   .iconWords2 {
-    padding-left: 55px;
-    margin-top: -40px;
-    position: block;
+    margin-top: -35px;
+    margin-left: 40px;
     font-family: "Common Pixel", sans-serif;
   }
   .iconWords3 {
-    margin-left: 65px;
-    margin-top: -70px;
-    position: block;
+    margin-top: -45px;
+    margin-left: 30px;
     font-family: "Common Pixel", sans-serif;
   }
   .iconWords4 {
-    margin-left: 60px;
-    margin-top: -45px;
-    position: block;
+    margin-top: -35px;
+    margin-left: 40px;
     font-family: "Common Pixel", sans-serif;
   }
 
   .iconWords5 {
-    margin-left: 55px;
-    margin-top: -50px;
-    position: block;
+    margin-top: -35px;
+    margin-left: 25px;
     font-family: "Common Pixel", sans-serif;
     align-items: center;
   }
@@ -320,12 +341,54 @@
     animation: fadeIn 0.5s;
   }
 
-  .blendervids {
-    height: 100%;
-    overflow-y: scroll;
-    float: center;
-    position: fixed;
-    z-index: 4;
+  .col-sm-4 img {
+    width: 300px;
+  }
+
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color: pink;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: pink;
+    color: black;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #018281;
+    color: white;
+    font-family: "Common Pixel", sans-serif;
   }
 
   @-webkit-keyframes fadeIn {
@@ -347,10 +410,45 @@
   }
 }
 @media screen and (min-width: 645px) {
+  .blendervids {
+    margin-left: 16%;
+    height: 100%;
+    overflow-y: scroll;
+    float: center;
+    position: fixed;
+    z-index: 4;
+  }
+  .owl_bar {
+    padding-top: 140px;
+    padding-left: 350px;
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    float: center;
+  }
+  .hooty img {
+    width: 700px;
+    height: auto;
+  }
+  .projectwords {
+    font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+    color: #ffffff;
+    font-size: 1.3em;
+  }
+  .col-sm-4 img {
+    width: 400px;
+  }
   .right_bar {
     float: right;
     width: 50%;
   }
+  .left_bar {
+    visibility: visible;
+    float: left;
+
+    position: absolute;
+  }
+
   #mydiv {
     position: absolute;
     z-index: 8;
@@ -385,15 +483,11 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
   .popup .popuptext {
     visibility: hidden;
     width: 350px;
-    height: 600px;
+    height: 200px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -425,11 +519,86 @@
     -webkit-animation: fadeIn 0.5s;
     animation: fadeIn 0.5s;
   }
+  /* Style the navigation menu */
+  .topnav {
+    visibility: hidden;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    font-family: "Common Pixel", sans-serif;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    visibility: hidden;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1300px) {
+  .owl_bar {
+    padding-top: 34px;
+    padding-left: 850px;
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    float: right;
+  }
+  .hooty {
+    margin-top: 100px;
+    margin-right: 25px;
+    position: fixed;
+    float: center;
+  }
+
+  .hooty img {
+    width: 900px;
+    height: auto;
+  }
+  .projectwords {
+    font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+    color: #ffffff;
+    font-size: 1.3em;
+  }
+  .col-sm-4 img {
+    width: 600px;
+  }
   .right_bar {
     float: right;
     width: 30%;
+  }
+  .left_bar {
+    float: left;
+    position: absolute;
   }
 
   #mydiv {
