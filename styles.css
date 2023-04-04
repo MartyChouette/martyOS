@@ -71,6 +71,8 @@
   }
 
   .blendervids {
+    font-family: "Common Pixel", sans-serif;
+    color: pink;
     height: 100%;
     overflow-y: scroll;
     float: center;
