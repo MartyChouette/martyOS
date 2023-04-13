@@ -180,6 +180,7 @@
 
   .gamessquare {
     width: auto;
+    margin-left: -10px;
   }
   .gamessquare img {
     height: auto;
@@ -245,7 +246,7 @@
 
   .iconWords5 {
     margin-top: -35px;
-    margin-left: 25px;
+    margin-left: 35px;
     font-family: "Common Pixel", sans-serif;
     align-items: center;
   }
