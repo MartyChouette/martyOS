@@ -230,7 +230,7 @@
 
   .iconWords2 {
     margin-top: -35px;
-    margin-left: 40px;
+    margin-left: 45px;
     font-family: "Common Pixel", sans-serif;
   }
   .iconWords3 {
@@ -240,7 +240,7 @@
   }
   .iconWords4 {
     margin-top: -35px;
-    margin-left: 40px;
+    margin-left: 45px;
     font-family: "Common Pixel", sans-serif;
   }
 
@@ -482,7 +482,7 @@
     background-color: pink;
   }
   audio {
-    width: 50%;
+    width: 60%;
   }
   .musicpage {
     padding-left: 200px;
