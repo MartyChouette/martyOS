@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
     <style></style>
-   
   </head>
   <body>
     <link
@@ -44,7 +43,7 @@
           Please enter your information and i will get back to you as soon as
           possible
         </p>
-<!-- 
+        <!-- 
         <form method="post" name="myemailform" action="form-to-email.php">
           Name: <input type="text" name="name" />
           <br />
@@ -149,6 +148,21 @@
             </span>
           </div>
         </div>
+        <div class="clock" id="clock"></div>
+
+        <script>
+          function updateClock() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            const timeString = `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${
+              seconds < 10 ? "0" : ""
+            }${seconds}`;
+            document.getElementById("clock").textContent = timeString;
+          }
+          setInterval(updateClock, 1000);
+        </script>
       </div>
     </div>
   </body>

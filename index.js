@@ -1,6 +1,36 @@
 // Make the DIV element draggable:
 dragElement(document.getElementById("mydiv"));
 
+$(document).ready(function () {
+  startTime();
+  $("#startMenu").hide();
+  $("#start").click(function () {
+    $("#startMenu").toggle();
+    $(this).toggleClass("startClick");
+  });
+
+  $("#desktop").click(function () {
+    $("#startMenu").hide();
+    $("#start").removeClass("startClick").addClass("startRest");
+  });
+
+  $(".desktopIcon").dblclick(function () {
+    alert($(this).text());
+  });
+});
+
+function updateClock() {
+  const now = new Date();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  const timeString = `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${
+    seconds < 10 ? "0" : ""
+  }${seconds}`;
+  document.getElementById("clock").textContent = timeString;
+}
+setInterval(updateClock, 1000);
+
 function dragElement(elmnt) {
   var pos1 = 0,
     pos2 = 0,
@@ -45,14 +75,6 @@ function dragElement(elmnt) {
   }
 
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-  function menuFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
 }
 function myFunction() {
   var popup = document.getElementById("myPopup");
@@ -71,8 +93,13 @@ function menuFunction() {
     x.style.display = "block";
   }
 }
+const welcome = document.querySelector(".welcome");
+const hooty = document.querySelector(".hooty");
 
+hooty.addEventListener("mouseover", () => {
+  welcome.textContent = "Hello!";
+});
 
-
-
- 
+hooty.addEventListener("mouseout", () => {
+  welcome.textContent = "Welcome";
+});

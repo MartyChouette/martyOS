@@ -43,12 +43,14 @@
   }
 
   .musicpage h3 {
-    font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+    font-family: "Common Pixel", Georgia, "Times New Roman", Times, serif,
+      sans-serif;
     color: #ffffff;
     font-size: 1.2em;
   }
   .projectwords {
-    font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+    font-family: "Common Pixel", Georgia, "Times New Roman", Times, serif,
+      sans-serif;
     color: #ffffff;
     font-size: 1.3em;
   }
@@ -121,6 +123,18 @@
     bottom: 0;
     z-index: 12;
     background-color: lightgrey;
+  }
+
+  #clock {
+    position: relative;
+    font-size: 26px;
+    text-align: right;
+    margin-top: -25px;
+    margin-right: 30px;
+    z-index: -122;
+
+    padding: 1px;
+    border-radius: 5px;
   }
 
   .emailsquare {
@@ -329,11 +343,13 @@
   }
 
   .popup .popuptext::after {
+    border-radius: 70%;
+    transform: translate(-50%, -55%);
     content: "";
     position: absolute;
     top: 100%;
     left: 70%;
-    margin-left: 50px;
+    margin-left: 20px;
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
@@ -411,6 +427,175 @@
       opacity: 1;
     }
   }
+
+  body div {
+    font-family: "Common Pixel", "MS Reference Sans Serif";
+    color: black;
+  }
+
+  #win {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(0, 128, 131);
+  }
+
+  #taskbar {
+    height: 26px;
+    background-color: rgb(192, 192, 192);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-top: ridge 2px white;
+  }
+
+  #start {
+    background: url(http://zombiechops.com/wp-content/uploads/2016/07/icon.png)
+      left center no-repeat;
+    background-size: 17px 15px;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 12px;
+    float: left;
+    width: 52px;
+    height: 21px;
+    display: inline-block;
+    padding: 1px 2px;
+    margin-left: 2px;
+    cursor: default;
+    user-select: none;
+  }
+
+  #startMenu {
+    top: -238px;
+    left: 2px;
+    height: 240px;
+    width: 164px;
+    background-color: rgb(192, 192, 192);
+    position: absolute;
+    display: block;
+    border-top: ridge 3px white;
+    border-left: ridge 3px white;
+    border-bottom: ridge 2px black;
+    border-right: ridge 2px grey;
+  }
+
+  #startMenu #left {
+    width: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgb(128, 128, 128);
+    font-family: "Common Pixel", Arial;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+
+  #startMenu .menuItem {
+    color: black;
+    height: 32px;
+    width: 134px;
+    margin-left: 24px;
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: central;
+  }
+
+  #startMenu .menuItem:hover {
+    background-color: rgb(0, 0, 128);
+    color: white;
+  }
+
+  #startMenu .expander:after {
+    content: "▶";
+    float: right;
+    margin-right: 5px;
+  }
+
+  #startMenu .menuItem:first-letter {
+    text-decoration: underline;
+  }
+
+  #startMenu #shutdown:first-letter {
+    text-decoration: none;
+  }
+
+  #startMenu #left .b {
+    color: rgb(192, 192, 192);
+    transform: rotateZ(-90deg);
+    transform-origin: center left;
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    font-size: 20px;
+    margin-top: 215px;
+    margin-left: 10px;
+  }
+
+  #startMenu #left .num95 {
+    font-weight: 100 !important;
+    color: white;
+  }
+
+  .startRest {
+    border-top: ridge 2px white;
+    border-left: ridge 2px white;
+    border-bottom: ridge 2px black;
+    border-right: ridge 2px black;
+  }
+
+  .startClick {
+    border-top: inset 2px black;
+    border-left: inset 2px black;
+    border-bottom: inset 2px white;
+    border-right: inset 2px white;
+  }
+
+  #notifications {
+    margin-right: 2px;
+    border-top: inset 2px grey;
+    border-left: inset 2px grey;
+    border-bottom: inset 2px white;
+    border-right: inset 2px white;
+    padding-top: 17px;
+    display: inline-block;
+    float: right;
+    width: 52px;
+    height: 21px;
+  }
+
+  #desktop {
+    height: calc(100% - 26px);
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .desktopIcon {
+    margin: 2px 7px;
+    display: block;
+    height: 68px;
+    width: 50px;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 10px;
+    color: white;
+  }
+
+  #mycomputer {
+    background-color: transparent;
+  }
+
+  .divider {
+    height: 1px;
+    border-top: ridge 1px white;
+    border-bottom: ridge 1px grey;
+    margin: 2px;
+  }
 }
 @media screen and (min-width: 645px) {
   .bottom_bar {
@@ -443,7 +628,8 @@
     height: auto;
   }
   .projectwords {
-    font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+    font-family: "Common Pixel", Georgia, "Times New Roman", Times, serif,
+      sans-serif;
     color: #ffffff;
     font-size: 1.3em;
   }
@@ -469,13 +655,13 @@
     background-color: darkgrey;
     border: 10px solid #d3d3d3;
     text-align: center;
-    font-family: "Common Pixel", sans-serif;
+    font-family: "Common Pixel", "Common Pixel", sans-serif;
   }
 
   #mydivheader {
     margin: 0px;
     height: 50px;
-    font-family: "Common Pixel", sans-serif;
+    font-family: "Common Pixel", "Common Pixel", sans-serif;
     font-size: 18px;
     cursor: grab;
     z-index: 9;
@@ -520,7 +706,7 @@
     content: "";
     position: absolute;
     top: 100%;
-    left: 70%;
+    left: 20%;
     margin-left: 50px;
     border-width: 5px;
     border-style: solid;
@@ -575,6 +761,175 @@
     background-color: #04aa6d;
     color: white;
   }
+
+  body div {
+    font-family: "Common Pixel", "MS Reference Sans Serif";
+    color: black;
+  }
+
+  #win {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(0, 128, 131);
+  }
+
+  #taskbar {
+    height: 26px;
+    background-color: rgb(192, 192, 192);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-top: ridge 2px white;
+  }
+
+  #start {
+    background: url(http://zombiechops.com/wp-content/uploads/2016/07/icon.png)
+      left center no-repeat;
+    background-size: 17px 15px;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 12px;
+    float: left;
+    width: 52px;
+    height: 21px;
+    display: inline-block;
+    padding: 1px 2px;
+    margin-left: 2px;
+    cursor: default;
+    user-select: none;
+  }
+
+  #startMenu {
+    top: -238px;
+    left: 2px;
+    height: 240px;
+    width: 164px;
+    background-color: rgb(192, 192, 192);
+    position: absolute;
+    display: block;
+    border-top: ridge 3px white;
+    border-left: ridge 3px white;
+    border-bottom: ridge 2px black;
+    border-right: ridge 2px grey;
+  }
+
+  #startMenu #left {
+    width: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgb(128, 128, 128);
+    font-family: "Common Pixel", Arial;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+
+  #startMenu .menuItem {
+    color: black;
+    height: 32px;
+    width: 134px;
+    margin-left: 24px;
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: central;
+  }
+
+  #startMenu .menuItem:hover {
+    background-color: rgb(0, 0, 128);
+    color: white;
+  }
+
+  #startMenu .expander:after {
+    content: "▶";
+    float: right;
+    margin-right: 5px;
+  }
+
+  #startMenu .menuItem:first-letter {
+    text-decoration: underline;
+  }
+
+  #startMenu #shutdown:first-letter {
+    text-decoration: none;
+  }
+
+  #startMenu #left .b {
+    color: rgb(192, 192, 192);
+    transform: rotateZ(-90deg);
+    transform-origin: center left;
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    font-size: 20px;
+    margin-top: 215px;
+    margin-left: 10px;
+  }
+
+  #startMenu #left .num95 {
+    font-weight: 100 !important;
+    color: white;
+  }
+
+  .startRest {
+    border-top: ridge 2px white;
+    border-left: ridge 2px white;
+    border-bottom: ridge 2px black;
+    border-right: ridge 2px black;
+  }
+
+  .startClick {
+    border-top: inset 2px black;
+    border-left: inset 2px black;
+    border-bottom: inset 2px white;
+    border-right: inset 2px white;
+  }
+
+  #notifications {
+    margin-right: 2px;
+    border-top: inset 2px grey;
+    border-left: inset 2px grey;
+    border-bottom: inset 2px white;
+    border-right: inset 2px white;
+    padding-top: 17px;
+    display: inline-block;
+    float: right;
+    width: 52px;
+    height: 21px;
+  }
+
+  #desktop {
+    height: calc(100% - 26px);
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .desktopIcon {
+    margin: 2px 7px;
+    display: block;
+    height: 68px;
+    width: 50px;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 10px;
+    color: white;
+  }
+
+  #mycomputer {
+    background-color: transparent;
+  }
+
+  .divider {
+    height: 1px;
+    border-top: ridge 1px white;
+    border-bottom: ridge 1px grey;
+    margin: 2px;
+  }
 }
 @media screen and (min-width: 1300px) {
   .bottom_bar {
@@ -616,7 +971,8 @@
     height: auto;
   }
   .projectwords {
-    font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+    font-family: "Common Pixel", Georgia, "Times New Roman", Times, serif,
+      sans-serif;
     color: #ffffff;
     font-size: 1.3em;
   }
@@ -690,7 +1046,7 @@
     content: "";
     position: absolute;
     top: 100%;
-    left: 70%;
+    left: 0%;
     margin-left: 50px;
     border-width: 5px;
     border-style: solid;
@@ -700,5 +1056,174 @@
     visibility: visible;
     -webkit-animation: fadeIn 0.5s;
     animation: fadeIn 0.5s;
+  }
+
+  body div {
+    font-family: "Common Pixel", "MS Reference Sans Serif";
+    color: black;
+  }
+
+  #win {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(0, 128, 131);
+  }
+
+  #taskbar {
+    height: 26px;
+    background-color: rgb(192, 192, 192);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-top: ridge 2px white;
+  }
+
+  #start {
+    background: url(http://zombiechops.com/wp-content/uploads/2016/07/icon.png)
+      left center no-repeat;
+    background-size: 17px 15px;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 12px;
+    float: left;
+    width: 52px;
+    height: 21px;
+    display: inline-block;
+    padding: 1px 2px;
+    margin-left: 2px;
+    cursor: default;
+    user-select: none;
+  }
+
+  #startMenu {
+    top: -238px;
+    left: 2px;
+    height: 240px;
+    width: 164px;
+    background-color: rgb(192, 192, 192);
+    position: absolute;
+    display: block;
+    border-top: ridge 3px white;
+    border-left: ridge 3px white;
+    border-bottom: ridge 2px black;
+    border-right: ridge 2px grey;
+  }
+
+  #startMenu #left {
+    width: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgb(128, 128, 128);
+    font-family: "Common Pixel", Arial;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+
+  #startMenu .menuItem {
+    color: black;
+    height: 32px;
+    width: 134px;
+    margin-left: 24px;
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: central;
+  }
+
+  #startMenu .menuItem:hover {
+    background-color: rgb(0, 0, 128);
+    color: white;
+  }
+
+  #startMenu .expander:after {
+    content: "▶";
+    float: right;
+    margin-right: 5px;
+  }
+
+  #startMenu .menuItem:first-letter {
+    text-decoration: underline;
+  }
+
+  #startMenu #shutdown:first-letter {
+    text-decoration: none;
+  }
+
+  #startMenu #left .b {
+    color: rgb(192, 192, 192);
+    transform: rotateZ(-90deg);
+    transform-origin: center left;
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    font-size: 20px;
+    margin-top: 215px;
+    margin-left: 10px;
+  }
+
+  #startMenu #left .num95 {
+    font-weight: 100 !important;
+    color: white;
+  }
+
+  .startRest {
+    border-top: ridge 2px white;
+    border-left: ridge 2px white;
+    border-bottom: ridge 2px black;
+    border-right: ridge 2px black;
+  }
+
+  .startClick {
+    border-top: inset 2px black;
+    border-left: inset 2px black;
+    border-bottom: inset 2px white;
+    border-right: inset 2px white;
+  }
+
+  #notifications {
+    margin-right: 2px;
+    border-top: inset 2px grey;
+    border-left: inset 2px grey;
+    border-bottom: inset 2px white;
+    border-right: inset 2px white;
+    padding-top: 17px;
+    display: inline-block;
+    float: right;
+    width: 52px;
+    height: 21px;
+  }
+
+  #desktop {
+    height: calc(100% - 26px);
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .desktopIcon {
+    margin: 2px 7px;
+    display: block;
+    height: 68px;
+    width: 50px;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 10px;
+    color: white;
+  }
+
+  #mycomputer {
+    background-color: transparent;
+  }
+
+  .divider {
+    height: 1px;
+    border-top: ridge 1px white;
+    border-bottom: ridge 1px grey;
+    margin: 2px;
   }
 }
