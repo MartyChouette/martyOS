@@ -7,24 +7,47 @@
     <title>MartyOS</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
-    <style></style>
+    <style>
+      .welcome {
+        white-space: pre;
+      }
+    </style>
     <script>
-      function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-      function changeColor(event) {
-        const text = document.getElementById("text");
-        const color = event.currentTarget.innerText;
-        text.style.color = color;
-      }
-      function menuFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
+      const greetings = [
+        { text: "How are\nyou? My \nname is\n Hooty", fontSize: "24px" },
+        { text: "I know some\nthings \nbut not\nmuch", fontSize: "24px" },
+        {
+          text: "My creator\nonly lets me\nsay so many\nthings",
+          fontSize: "24px",
+        },
+        { text: "But...you\nknow how\nit goes", fontSize: "26px" },
+        { text: "You work\nwith what\nyou got", fontSize: "28px" },
+        { text: "...", fontSize: "32px" },
+        { text: "You're\nstil\nhere?", fontSize: "28px" },
+        { text: "Like I said,\nI can't \nsay much", fontSize: "28px" },
+        { text: "ok, ok, ok\nI know some\nthings", fontSize: "26px" },
+        { text: "but it's\nmainly owl\nstuff", fontSize: "28px" },
+        { text: "I don't know\nanything\nabout\ncomputers", fontSize: "25px" },
+        { text: "I just kinda\nhangout\nhere", fontSize: "25px" },
+        { text: "and\nwelcome\npeople", fontSize: "28px" },
+        { text: "...", fontSize: "28px" },
+        { text: "... ...", fontSize: "28px" },
+        { text: "... ... ...", fontSize: "28px" },
+        { text: "actually\nI do know\none thing", fontSize: "28px" },
+        { text: "... or I did", fontSize: "28px" },
+        { text: "Guess I\nforgot", fontSize: "28px" },
+        { text: "Seems my\nmemory is\nreally bad", fontSize: "28px" },
+        { text: "...", fontSize: "28px" },
+        { text: "... ...", fontSize: "28px" },
+        { text: "... ... ...", fontSize: "28px" },
+      ];
+      let greetingIndex = 0;
+
+      function cycleGreetings() {
+        const greeting = greetings[greetingIndex];
+        document.querySelector(".welcome").textContent = greeting.text;
+        document.querySelector(".welcome").style.fontSize = greeting.fontSize;
+        greetingIndex = (greetingIndex + 1) % greetings.length;
       }
     </script>
   </head>
@@ -35,14 +58,15 @@
     />
     <!-- Top Navigation Menu -->
     <div class="topnav">
-      <a href="hooty.html" class="active">Marty_OS</a>
+      <a href="index.html" >Marty_OS</a>
       <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
         <a href="index.html">Home</a>
-        <a href="email.html">Email</a>
+        <a href="email.html">Contact</a>
         <a href="music.html">Music</a>
         <a href="games.html">Projects</a>
         <a href="blender.html">Silly CGI</a>
+        <a href="hooty.html" class="active">Hooty The Owl</a>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
@@ -52,11 +76,21 @@
     <div class="top_bar"></div>
 
     <div class="owl_bar">
+      <img
+        src="images/talk.png"
+        style="position: absolute; margin-top: -160px; margin-left: -450px"
+      />
+      <span
+        class="welcome"
+        style="position: absolute; font-size: 30px; margin-top: 101px"
+        >Hey <br />there!</span
+      >
       <div class="hooty">
         <a href="hooty.html"></a
         ><img
           src="images/owlno.png"
-          style="position: absolute; margin-right: 1200px"
+          style="position: absolute"
+          onclick="cycleGreetings()"
         />
       </div>
     </div>
@@ -69,7 +103,7 @@
 
       <div class="emailsquare">
         <a href="email.html"><img src="images/email.png" /></a>
-        <div class="iconWords2">EMAIL</div>
+        <div class="iconWords2">CONTACT</div>
       </div>
       <div class="gamessquare">
         <a href="games.html"><img src="images/disk2.png" /></a>
@@ -86,6 +120,11 @@
         <div class="iconWords3">BLENDER</div>
       </div>
 
+       <div class="hootysquare">
+        <a href="hooty.html"><img src="images/hooty.png" /></a>
+        <div class="iconWords6">HOOTY</div>
+      </div>
+
       <div
         class="miscsquare"
         style="background-color: none; visibility: hidden"
@@ -95,41 +134,56 @@
       </div>
     </div>
 
-    <!-- <div class="main">
-      <span class="talk"
-        ><img src="images/talkboxedit.png" style="width: 500px" />
-        <span class="talk talkwords">HI!</span>
-      </span>
-    </div> -->
-
-    <div class="right_bar"></div>
-
-    <div class="bottom_bar">
-      <div class="startIcon">
-        <div class="popup" onclick="myFunction()">
-          START
-          <span class="popuptext" id="myPopup">
-            <div class="martymenu">
-              ->Made by MARTY <br /><br />
-              MARTY'S
-              <a href="https://martychouette.github.io/">RESUME</a><br /><br />
-              MARTY'S
-              <a href="https://www.linkedin.com/in/marty-scott-08a925123/"
-                >LINKEDIN</a
-              ><br /><br />
-              MARTY'S
-              <a href="https://github.com/MartyChouette">GITHUB</a><br /><br />
-              MARTY'S
-              <a href="https://dev.to/martychouette"> DEV.TO</a><br /><br />
-              <!-- ABOUT MARTY
+    <div id="taskbar">
+      <div class="bottom_bar">
+        <div class="startIcon">
+          <div class="popup" onclick="myFunction()">
+            LINKS
+            <span class="popuptext" id="myPopup">
+              <div class="martymenu">
+                ->Made by MARTY <br /><br />
+                MARTY'S
+                <a href="https://martychouette.github.io/">RESUME</a
+                ><br /><br />
+                MARTY'S
+                <a href="https://www.linkedin.com/in/marty-scott-08a925123/"
+                  >LINKEDIN</a
+                ><br /><br />
+                MARTY'S
+                <a href="https://github.com/MartyChouette">GITHUB</a
+                ><br /><br />
+                MARTY'S
+                <a href="https://dev.to/martychouette"> DEV.TO</a><br /><br />
+                <!-- ABOUT MARTY
               <a href="url">link text</a><br /><br />
               ABOUT HOOTY
               <a href="url">link text</a><br /><br />
               SITES SOURCE CODE
               <a href="url">link text</a><br /><br /> -->
-            </div>
-          </span>
+              </div>
+            </span>
+          </div>
         </div>
+
+        <div class="clock" id="clock"></div>
+
+       <script>
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    let ampm = hours >= 12 ? "PM" : "AM";
+
+    // Convert hours to 12-hour format
+    hours = hours % 12 || 12;
+
+    const timeString = `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${seconds < 10 ? "0" : ""}${seconds} ${ampm}`;
+    document.getElementById("clock").textContent = timeString;
+  }
+  setInterval(updateClock, 1000);
+</script>
+
       </div>
     </div>
   </body>

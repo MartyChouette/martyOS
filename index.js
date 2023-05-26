@@ -96,7 +96,7 @@ function menuFunction() {
 const welcome = document.querySelector(".welcome");
 const hooty = document.querySelector(".hooty");
 
-hooty.addEventListener("mouseover", () => {
+hooty.addEventListener("mouseclick", () => {
   welcome.textContent = "Hello!";
 });
 

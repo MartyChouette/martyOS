@@ -30,14 +30,15 @@
         />
         <!-- Top Navigation Menu -->
         <div class="topnav">
-          <a href="#home" class="active">Marty_OS</a>
+          <a href="#home">Marty_OS</a>
           <!-- Navigation links (hidden by default) -->
           <div id="myLinks">
             <a href="index.html">Home</a>
-            <a href="email.html">Email</a>
+            <a href="email.html">Contact</a>
             <a href="music.html">Music</a>
             <a href="games.html">Projects</a>
-            <a href="blender.html">Silly CGI</a>
+            <a href="blender.html" class="active">Silly CGI</a>
+            <a href="hooty.html">Hooty The Owl</a>
           </div>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
           <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
@@ -53,7 +54,7 @@
 
           <div class="emailsquare">
             <a href="email.html"><img src="images/email.png" /></a>
-            <div class="iconWords2">EMAIL</div>
+            <div class="iconWords2">CONTACT</div>
           </div>
           <div class="gamessquare">
             <a href="games.html"><img src="images/disk2.png" /></a>
@@ -68,6 +69,11 @@
           <div class="blendsquare">
             <a href="blender.html"><img src="images/blendericon.png" /></a>
             <div class="iconWords3">BLENDER</div>
+          </div>
+
+          <div class="hootysquare">
+            <a href="hooty.html"><img src="images/hooty.png" /></a>
+            <div class="iconWords6">HOOTY</div>
           </div>
 
           <div
@@ -95,7 +101,7 @@
         <div class="bottom_bar">
           <div class="startIcon">
             <div class="popup" onclick="myFunction()">
-              START
+              LINKS
               <span class="popuptext" id="myPopup">
                 <div class="martymenu">
                   ->Made by MARTY <br /><br />
@@ -126,12 +132,17 @@
           <script>
             function updateClock() {
               const now = new Date();
-              const hours = now.getHours();
+              let hours = now.getHours();
               const minutes = now.getMinutes();
               const seconds = now.getSeconds();
+              let ampm = hours >= 12 ? "PM" : "AM";
+
+              // Convert hours to 12-hour format
+              hours = hours % 12 || 12;
+
               const timeString = `${hours}:${
                 minutes < 10 ? "0" : ""
-              }${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+              }${minutes}:${seconds < 10 ? "0" : ""}${seconds} ${ampm}`;
               document.getElementById("clock").textContent = timeString;
             }
             setInterval(updateClock, 1000);

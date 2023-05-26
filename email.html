@@ -7,33 +7,62 @@
     <title>MartyOS</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
-    <style></style>
+    <style>
+      .owl_bar {
+        width: 100%;
+        height: 30px;
+        background-color: #666;
+      }
+
+      .social-links {
+        position: fixed;
+        top: 30%;
+        right: 50%;
+        left: 100px;
+        transform: translateY(-50%);
+        margin: 50px;
+        margin-bottom: 500px;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .social-links a {
+        display: block;
+        margin-bottom: 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <!-- Top Navigation Menu -->
     <div class="topnav">
       <a href="index.html">Marty_OS</a>
       <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
         <a href="index.html">Home</a>
-        <a href="email.html" class="active">Email</a>
+        <a href="email.html" class="active">Contact</a>
         <a href="music.html">Music</a>
         <a href="games.html">Projects</a>
         <a href="blender.html">Silly CGI</a>
+        <a href="hooty.html">Hooty The Owl</a>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <div class="ma in">
+    <div class="main">
       <!-- Draggable DIV -->
-      <div id="mydiv">
-        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+      <!-- <div id="mydiv">
+         Include a header DIV with the same name as the draggable DIV, followed by "header" 
 
         <div id="mydivheader">
           <a href="index.html" class="previous round">&#8249;</a> Contact Marty
@@ -43,7 +72,7 @@
           Please enter your information and i will get back to you as soon as
           possible
         </p>
-        <!-- 
+        
         <form method="post" name="myemailform" action="form-to-email.php">
           Name: <input type="text" name="name" />
           <br />
@@ -53,7 +82,7 @@
           <br />
           <input type="submit" value="Send" />
           <input type="reset" value="Reset" />
-        </form> -->
+        </form> 
 
         <form
           action="mailto:martychouette@gmail.com"
@@ -69,7 +98,7 @@
           <input type="submit" value="Send" />
           <input type="reset" value="Reset" />
         </form>
-      </div>
+      </div> -->
 
       <div class="top_bar"></div>
       <div class="left_bar" style="z-index: 99">
@@ -80,7 +109,7 @@
 
         <div class="emailsquare">
           <a href="email.html"><img src="images/email.png" /></a>
-          <div class="iconWords2">EMAIL</div>
+          <div class="iconWords2">CONTACT</div>
         </div>
         <div class="gamessquare">
           <a href="games.html"><img src="images/disk2.png" /></a>
@@ -95,6 +124,11 @@
         <div class="blendsquare">
           <a href="blender.html"><img src="images/blendericon.png" /></a>
           <div class="iconWords3">BLENDER</div>
+        </div>
+
+        <div class="hootysquare">
+          <a href="hooty.html"><img src="images/hooty.png" /></a>
+          <div class="iconWords6">HOOTY</div>
         </div>
 
         <div
@@ -122,7 +156,7 @@
       <div class="bottom_bar">
         <div class="startIcon">
           <div class="popup" onclick="myFunction()">
-            START
+            LINKS
             <span class="popuptext" id="myPopup">
               <div class="martymenu">
                 ->Made by MARTY <br /><br />
@@ -153,16 +187,36 @@
         <script>
           function updateClock() {
             const now = new Date();
-            const hours = now.getHours();
+            let hours = now.getHours();
             const minutes = now.getMinutes();
             const seconds = now.getSeconds();
+            let ampm = hours >= 12 ? "PM" : "AM";
+
+            // Convert hours to 12-hour format
+            hours = hours % 12 || 12;
+
             const timeString = `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${
               seconds < 10 ? "0" : ""
-            }${seconds}`;
+            }${seconds} ${ampm}`;
             document.getElementById("clock").textContent = timeString;
           }
           setInterval(updateClock, 1000);
         </script>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/marty-scott-08a925123/">
+          <i class="fa fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/MartyChouette">
+          <i class="fa fa-github"></i> GitHub
+        </a>
+        <a href="https://martychouette.itch.io/">
+          <i class="fa fa-itch-io"></i> Itch.io
+        </a>
+        <a href="https://dev.to/martychouette">
+          <i class="fa fa-dev"></i> Dev.to
+        </a>
       </div>
     </div>
   </body>
