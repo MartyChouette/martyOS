@@ -318,8 +318,7 @@
               MARTY'S
               <a href="https://martychouette.github.io/">RESUME</a><br /><br />
               MARTY'S
-              <a href="https://www.linkedin.com/in/marty-scott-08a925123/"
-                >LINKEDIN</a
+              <a href="https://www.linkedin.com/in/martyscott64/">LINKEDIN</a
               ><br /><br />
               MARTY'S
               <a href="https://github.com/MartyChouette">GITHUB</a><br /><br />
@@ -338,22 +337,23 @@
       <div class="clock" id="clock"></div>
 
       <script>
-  function updateClock() {
-    const now = new Date();
-    let hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-    let ampm = hours >= 12 ? "PM" : "AM";
+        function updateClock() {
+          const now = new Date();
+          let hours = now.getHours();
+          const minutes = now.getMinutes();
+          const seconds = now.getSeconds();
+          let ampm = hours >= 12 ? "PM" : "AM";
 
-    // Convert hours to 12-hour format
-    hours = hours % 12 || 12;
+          // Convert hours to 12-hour format
+          hours = hours % 12 || 12;
 
-    const timeString = `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${seconds < 10 ? "0" : ""}${seconds} ${ampm}`;
-    document.getElementById("clock").textContent = timeString;
-  }
-  setInterval(updateClock, 1000);
-</script>
-
+          const timeString = `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${
+            seconds < 10 ? "0" : ""
+          }${seconds} ${ampm}`;
+          document.getElementById("clock").textContent = timeString;
+        }
+        setInterval(updateClock, 1000);
+      </script>
     </div>
   </body>
 

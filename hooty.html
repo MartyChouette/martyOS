@@ -7,6 +7,10 @@
     <title>MartyOS</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <style>
       .welcome {
         white-space: pre;
@@ -58,7 +62,7 @@
     />
     <!-- Top Navigation Menu -->
     <div class="topnav">
-      <a href="index.html" >Marty_OS</a>
+      <a href="index.html">Marty_OS</a>
       <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
         <a href="index.html">Home</a>
@@ -120,7 +124,7 @@
         <div class="iconWords3">BLENDER</div>
       </div>
 
-       <div class="hootysquare">
+      <div class="hootysquare">
         <a href="hooty.html"><img src="images/hooty.png" /></a>
         <div class="iconWords6">HOOTY</div>
       </div>
@@ -146,8 +150,7 @@
                 <a href="https://martychouette.github.io/">RESUME</a
                 ><br /><br />
                 MARTY'S
-                <a href="https://www.linkedin.com/in/marty-scott-08a925123/"
-                  >LINKEDIN</a
+                <a href="https://www.linkedin.com/in/martyscott64/">LINKEDIN</a
                 ><br /><br />
                 MARTY'S
                 <a href="https://github.com/MartyChouette">GITHUB</a
@@ -167,23 +170,24 @@
 
         <div class="clock" id="clock"></div>
 
-       <script>
-  function updateClock() {
-    const now = new Date();
-    let hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-    let ampm = hours >= 12 ? "PM" : "AM";
+        <script>
+          function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            let ampm = hours >= 12 ? "PM" : "AM";
 
-    // Convert hours to 12-hour format
-    hours = hours % 12 || 12;
+            // Convert hours to 12-hour format
+            hours = hours % 12 || 12;
 
-    const timeString = `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${seconds < 10 ? "0" : ""}${seconds} ${ampm}`;
-    document.getElementById("clock").textContent = timeString;
-  }
-  setInterval(updateClock, 1000);
-</script>
-
+            const timeString = `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${
+              seconds < 10 ? "0" : ""
+            }${seconds} ${ampm}`;
+            document.getElementById("clock").textContent = timeString;
+          }
+          setInterval(updateClock, 1000);
+        </script>
       </div>
     </div>
   </body>
